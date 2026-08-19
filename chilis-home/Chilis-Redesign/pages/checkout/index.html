@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="main-nav">
+
+            <a href="index.html">
+                <img
+                    src="../../assets/icons/main-icon.png"
+                    alt="Chili's Home"
+                    class="chilis-logo"
+                >
+            </a>
+
+            <div class="nav-links">
+                <button class="theme-btn" onclick="switchTheme()">
+                    Dark Mode
+                </button>
+
+                <a href="../../index.html">Home</a>
+
+                <button class="cart-btn" id="cartBtn" type="button">
+                    Back to Menu
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="order-details">
+            <div class="left-column">
+                <div class="option">
+                    <h1>Order Details</h1>
+                    <button class="edit-btn" id="editBtn" type="button">
+                        Edit
+                    </button>
+                </div>
+                <div id="details">
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div id="timer">
+                    <div>23456789</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h1>Contact Info</h1>
+            <form>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" value="Type here">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" value="Type here">
+
+                <label for="number">Number:</label>
+                <input type="text" id="number" name="number" value="Type here">
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" value="Type here">
+            </form>
+        </section>
+
+        <section class="order-summary">
+            <div class="summary">
+                <h1>Order Summary</h1>
+                <div>
+                    <div>#items
+                        <div>4</div>
+                    </div>
+
+                    <div>subtotal
+                        <div>$45.00</div>
+                    </div>
+                    <div>tax
+                        <div>$5.00</div>
+                    </div>
+                    <div>Total
+                        <div>$50.00</div>
+                    </div>
+                </div>
+                <button class="order-btn" id="orderBtn" type="button">
+                    Place Order
+                </button>
+            </div>
+        </section>
+    </main>
+
+       <!-- Footer -->
+<footer class="footer">
+
+    <!-- App -->
+    <section class="footer-app">
+
+        <h2>Download Our App for Rewards</h2>
+
+        <a
+            href="https://apps.apple.com/us/app/chilis/id464383246"
+            target="_blank"
+        >
+            <img
+                src="../../assets/icons/app-store-download.webp"
+                alt="Download Chili's on the App Store"
+            >
+        </a>
+
+        <a
+            href="https://play.google.com/store/apps/details?id=com.brinker.chilis&pli=1"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                src="../../assets/icons/android-download.png"
+                alt="Download Chili's on Google Play"
+            >
+        </a>
+
+    </section>
+
+
+    <!-- Footer Links -->
+    <nav class="footer-links">
+
+        <a href="https://www.chilisjobs.com/our-story/" target="_blank">
+            Our Story
+        </a>
+
+        <a href="https://www.chilis.com/who-we-are" target="_blank">
+            Who We Are
+        </a>
+
+        <a href="https://www.chilisjobs.com/" target="_blank">
+            Join Our Team
+        </a>
+
+        <a href="https://brinker.com/franchise" target="_blank">
+            Franchising
+        </a>
+
+        <a href="https://restaurant.nutritionix.com/chilis/landing" target="_blank">
+            Nutrition Info
+        </a>
+
+        <a href="https://chilis.qualtrics.com/jfe/form/SV_3VMPMsu61xSM5hk" target="_blank">
+            Site Feedback
+        </a>
+
+        <a href="https://www.chilis.com/contact-us" target="_blank">
+            Get in Touch
+        </a>
+
+    </nav>
+
+
+    <!-- Social -->
+    <section class="social">
+
+        <a href="https://www.facebook.com/Chilis/" target="_blank">
+            <img src="../../assets/icons/facebook-icon.png" alt="Facebook">
+        </a>
+
+        <a href="https://www.instagram.com/chilis/" target="_blank">
+            <img src="../../assets/icons/instagram-icon.png" alt="Instagram">
+        </a>
+
+        <a href="https://twitter.com/chilis/" target="_blank">
+            <img src="../../assets/icons/X-icon.jpg" alt="X">
+        </a>
+
+        <a href="https://www.tiktok.com/@chilisofficial" target="_blank">
+            <img src="../../assets/icons/tiktok-icon.png" alt="TikTok">
+        </a>
+
+    </section>
+
+
+    <!-- Legal -->
+    <nav class="footer-legal">
+
+        <a href="https://brinker.com/terms-and-conditions" target="_blank">
+            Terms and Conditions
+        </a>
+
+        <a href="https://www.chilis.com/site-map" target="_blank">
+            Sitemap
+        </a>
+
+        <a href="https://www.chilis.com/web-accessibility" target="_blank">
+            Web Accessibility
+        </a>
+
+        <a href="https://brinker.com/privacy" target="_blank">
+            Privacy Policy
+        </a>
+
+        <p>&copy; 2026 Brinker International. All Rights Reserved.</p>
+
+    </nav>
+</footer>
+<script src="../menu/menu-data.js"></script>
+<script src="checkout.js"></script>
+</body>
+</html>

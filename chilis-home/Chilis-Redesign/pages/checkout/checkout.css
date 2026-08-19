@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f1ee;
+    color: #222;
+}
+
+/* HEADER */
+
+.site-header {
+    border-bottom: 3px solid #e83c32;
+    padding: 15px 30px;
+    background-color: white;
+}
+
+.main-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.chilis-logo {
+    width: 80px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Buttons */
+
+.theme-btn,
+.cart-btn {
+    padding: 10px 15px;
+    border: 2px solid #222;
+    border-radius: 5px;
+    background-color: transparent;
+    color: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart-btn {
+    background-color: #e83c32;
+    border-color: #e83c32;
+    color: white;
+}
+
+.cart-btn:hover {
+    background-color: #c92d25;
+    color: white;
+}
+
+.theme-btn:hover {
+    color: #e83c32;
+}
+
+/* ORDER DETAILS */
+.order-details{
+    border: 2px solid;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-column{
+    width: 50%;
+    
+}
+
+.right-column{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid;
+    margin: 20px auto;
+}
+
+/* CONTACT INFO*/
+.contact-info{
+    border: 2px solid;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+
+}
+/* ORDER SUMMARY */
+.order-summary{
+    border: 2px solid;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 40px 30px 20px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+
+    /* background-color: #25262a;
+    color: #d0d0d0; */
+
+    border-top: 2px solid #3a3b40;
+}
+
+
+.footer > section,
+.footer > nav {
+    border: none;
+    padding: 0;
+}
+
+
+
+
+.footer-app {
+    text-align: left;
+}
+
+.footer-app h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-app img {
+    width: 140px;
+    margin: 10px 0;
+}
+
+
+
+.social {
+    grid-column: 3;
+    grid-row: 2;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+.social img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    padding: 8px;
+}
+
+
+
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.footer-links a,
+.footer-legal a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.footer-links a:hover,
+.footer-legal a:hover {
+    color: #e83c32;
+}
+
+
+
+.footer-legal {
+    grid-column: 1 / 3;
+    grid-row: 2;
+
+    border-top: 2px solid #3a3b40 !important;
+    padding-top: 20px !important;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    font-size: 14px;
+}
+
+.footer-legal p {
+    margin: 0;
+    color: #888;
+}
