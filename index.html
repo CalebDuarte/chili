@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chili's Menu</title>
+    <link rel="stylesheet" href="../../shared/style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header class="head">
+        <nav class="main-nav"> <!-- the main nav to got between all the pages it is on every page making navigation easier -->
+            <img src="../../assets/icons/main-icon.png" alt="Chilis Logo" class="chilis-logo" />
+            <!-- links to all the pages -->
+            <a href="/index.html">Home</a>
+            <a href="/pages/menu/">Menu</a>
+            <a href="/pages/checkout/">Checkout</a>
+            <button class="theme-btn" onclick="switchTheme()">Dark Mode</button>
+            <button class="cart-btn" id="cartBtn">Cart</button> <!-- button to see what is in your cart -->
+        </nav>
+    </header>
+    <div class="container"> <!-- div for the main content -->
+        <img src="../../assets/images/hero-img.jpg" alt="Chilis Triple Dipper" class="hero-img" />
+        <nav class="Menu-nav"> <!-- this is the nav for this page making it easier to find food through categories and brining you to the spot on the page where it is located -->
+            <!-- all the things on the nav to bring you to where the items are located -->
+            <a href="#Breakfast"><li>Breakfast</li></a>
+            <a href="#Lunch"><li>Lunch</li></a>
+            <a href="#Dinner"><li>Dinner</li></a>
+            <a href="#Beverages"><li>Beverages</li></a>
+            <a href="#Dessert"><li>Dessert</li></a>
+        </nav>
+
+        <!-- each h2 is the heading of the food category where this is how the nav brings you to the spot -->
+         <!-- first div is the div that holds all the food cards so its is easier to put them in order -->
+          <!-- second div is the actual food card where the info will be automatically put into it through js -->
+        <h2 id="Breakfast">Breakfast Items</h2>
+        <div class="breakfast-food-div food" id="BreakfastFoodDiv">
+            <div class="food-card" id="BreakfastMenuItem"></div>
+        </div>
+        <h2 id="Lunch">Lunch Items</h2>
+        <div class="lunch-food-div food" id="LunchFoodDiv">
+            <div class="food-card" id="LunchMenuItem"></div>
+        </div>
+        <h2 id="Dinner">Dinner Items</h2>
+        <div class="dinner-food-div food" id="DinnerFoodDiv">
+            <div class="food-card" id="DinnerMenuItem"></div>
+        </div>
+        <h2 id="Beverages">Beverages</h2>
+        <div class="beverages-food-div food" id="BeveragesFoodDiv">
+            <div class="food-card" id="BeverageMenuItem"></div>
+        </div>
+        <h2 id="Dessert">Dessert Items</h2>
+        <div class="dessert-food-div food" id="DessertFoodDiv">
+            <div class="food-card" id="DessertMenuItem"></div>
+        </div>
+    </div>
+
+    <!-- the footer where all the other info is like copy right and other links etc -->
+    <!-- Footer -->
+    <footer class="footer">
+
+        
+        <section class="footer-app">
+            <h2>Download Our App for Rewards</h2>
+
+            <a
+                href="https://apps.apple.com/us/app/chilis/id464383246"
+                target="_blank"
+            >
+                <img
+                    src="../../assets/icons/app-store-download.webp"
+                    alt="Download Chili's on the App Store"
+                >
+            </a>
+
+            <a
+                href="https://play.google.com/store/apps/details?id=com.brinker.chilis&pli=1"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src="../../assets/icons/android-download.png"
+                    alt="Download Chili's on Google Play"
+                >
+            </a>
+        </section>
+
+ 
+        <section class="social">
+            <a href="#" target="_blank">
+                <img src="../../assets/icons/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="#" target="_blank">
+                <img src="../../assets/icons/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="#" target="_blank">
+                <img src="../../assets/icons/X-icon.jpg" alt="X">
+            </a>
+            <a href="#" target="_blank">
+                <img src="../../assets/icons/tiktok-icon.png" alt="Tiktok">
+            </a>
+        </section>
+
+       
+        <nav class="footer-links">
+            <a href="https://www.chilisjobs.com/our-story/" target="_blank" rel="noopener noreferrer">
+                Our Story
+            </a>
+
+            <a href="https://www.chilis.com/who-we-are" target="_blank" rel="noopener noreferrer">
+                Who We Are
+            </a>
+
+            <a href="https://www.chilisjobs.com/" target="_blank" rel="noopener noreferrer">
+                Join Our Team
+            </a>
+
+            <a href="https://brinker.com/franchise" target="_blank" rel="noopener noreferrer">
+                Franchising
+            </a>
+
+            <a href="https://restaurant.nutritionix.com/chilis/landing?rel=%E2%80%9Cnofollow%E2%80%9D" target="_blank" rel="noopener noreferrer">
+                Nutrition Info
+            </a>
+
+            <a href="https://chilis.qualtrics.com/jfe/form/SV_3VMPMsu61xSM5hk" target="_blank" rel="noopener noreferrer">
+                Site Feedback
+            </a>
+
+            <a href="https://www.chilis.com/contact-us" target="_blank" rel="noopener noreferrer">
+                Get in Touch
+            </a>
+        </nav>
+
+        <nav class="footer-legal">
+            <a href="https://brinker.com/terms-and-conditions" target="_blank" rel="noopener noreferrer">
+                Terms and Conditions
+            </a>
+
+            <a href="https://www.chilis.com/site-map" target="_blank" rel="noopener noreferrer">
+                Sitemap
+            </a>
+
+            <a href="https://www.chilis.com/web-accessibility" target="_blank" rel="noopener noreferrer">
+                Web Accessibility
+            </a>
+
+            <a href="https://brinker.com/privacy" target="_blank" rel="noopener noreferrer">
+                Privacy Policy
+            </a>
+
+            <p>&copy; 2026 Brinker International. All Rights Reserved.</p>
+        </nav>
+
+    </footer>
+
+    <!-- menu-data.js has to load first since both app.js and menu.js need the menuItems array -->
+    <script src="menu-data.js"></script>
+    <script src="../../shared/app.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

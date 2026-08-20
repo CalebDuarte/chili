@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Menu-nav {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.Menu-nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.Menu-nav a:hover {
+    color: #e83c32;
+}
+
+h2 {
+    padding: 20px;
+    scroll-margin-top: 80px; /* so jumping to #Breakfast etc doesnt hide under the sticky nav */
+}
+
+.food {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 20px 40px 20px;
+}
+
+.food-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.food-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.no-photo {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.food-card h3 {
+    padding: 10px 12px 0 12px;
+    font-size: 1rem;
+}
+
+.kids-tag {
+    background: #81bf40;
+    color: #000;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 6px;
+}
+
+.food-desc {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+.food-price {
+    padding: 0 12px;
+    font-weight: bold;
+    color: #e83c32;
+}
+
+.food-card .btn {
+    margin: 12px;
+    background: #e83c32;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.food-card .btn:hover {
+    background: #c62d24;
+}
+
+/* DARK MODE */
+
+body.dark-mode .food-card {
+    background: #333;
+    border-color: #555;
+    color: #f6f1ee;
+}
+
+body.dark-mode .food-desc {
+    color: #ccc;
+}
+
+body.dark-mode .no-photo {
+    background: #444;
+    color: #ccc;
+}
+
+@media screen and (max-width: 767px) {
+    .food {
+        grid-template-columns: 1fr;
+        padding: 0 15px 30px 15px;
+    }
+}
